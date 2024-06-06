@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mia's Portfolio Website</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/02aa8b0114.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <p><span>M</span>ia.</p>
+          </div>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span>Mia</span>,<br />
+            Web Developer
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!---------------------about---------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/IMG_0002.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              <span class="text">Hello World!</span> I'm Mia Reetsang, a
+              beginner web developer based in Gaborone, Botswana. From plays on
+              a stage and marketing strategies to lines of code on a web page. I
+              love combining the worlds of logic and creative design to make
+              eye-catching, accessible and user friendly websites and
+              applications. I'm excited to make the leap and continue growing my
+              skills with the right company; learning from more experienced
+              programmers and potentially becoming a long term employee aligning
+              with the company's objectives.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Devepment</span><br />Ability to write and edit
+                  technical documentation. Knowledge of modern HTML/CSS.
+                  Creative problem-solving skills. Strong organizational skills.
+                  Ability to work and thrive in a fast-paced environment.
+                  Hands-on efficient work ethic.
+                </li>
+                <li>
+                  <span>Web Design</span><br />Designing the overall layout and
+                  aesthetic for websites depending on audience and/or product.
+                  Use of visual communication skills, design multimedia skills
+                  and computer adeptness. Ability to work on multiple projects
+                  simultaneously and meet deadlines.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Jan - Current</span><br />Web App development and
+                  software engineering(front-end) training at
+                  <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+                </li>
+                <li>
+                  <span>2021 - 2023</span><br /><b>English Tutor</b
+                  ><br />Proficiently teach reading, writing, listening &
+                  grammar to varying student proficiency levels. Conduct regular
+                  evaluations, tests and progress assessments to track student
+                  development & adapt teaching methods accordingly.
+                </li>
+                <li>
+                  <span>2021 - 2023</span><br /><b>Receptionist</b><br />Led
+                  administrative tasks, optimizing clinic operations and
+                  reducing paperwork processing time by 20%. Oversaw a filing
+                  system for 1,000+ records with 100% data accuracy,
+                  demonstrating exceptional organizational skills.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >Botho University &emsp;&emsp;&emsp;&emsp;&emsp;<i
+                      >Current - Jul, 2028</i
+                    ></span
+                  ><br /><b>Bachelor of Technology in Software Engineering</b
+                  ><br />Relevant Coursework: Programming Languages, Software
+                  Development, Data Structures & Algorithms, Database
+                  Management, Web Development, Software Testing, Object-Oriented
+                  Design, Operating Systems, Project Management and more
+                </li>
+                <li>
+                  <span>TEFL-South Africa</span><br />Planned, prepared and
+                  delivered lessons to a range of students in multiple age
+                  groups. Prepared and set tests, examination papers and
+                  exercises. Marked and provided appropriate feedback on oral
+                  and written work.
+                </li>
+                <li>
+                  <span>High School</span><br />Led the school swim team as
+                  captain, demonstrating strong leadership by coordinating
+                  practices and achieving a 70% increase in team performance.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------services---------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Developing new user-facing features, determining the structure and
+              design of web pages, building reusable codes, optimizing page
+              loading times, and using a variety of markup languages to create
+              the web pages.
+            </p>
+            <!--<a href="#">Learn more</a>-->
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Web Design</h2>
+            <p>
+              Designing and determining the structure of web pages and using
+              complementary marketing strategies to promote user-attraction.
+            </p>
+            <!--<a href="#">Learn more</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------portfolio---------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/cafe-menu.png" />
+            <div class="layer">
+              <h3>Cafe-Menu Website</h3>
+              <p>
+                This is an online menu for a local cafe. Click here to see full
+                website.
+              </p>
+              <a href="https://moccaa.github.io/cafe-menu/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/calculator.png" />
+            <div class="layer">
+              <h3>Calculator</h3>
+              <p>This is my calculator. Click here to see how it works.</p>
+              <a href="https://moccaa.github.io/calculator/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/penguin.png" />
+            <div class="layer">
+              <h3>Animated Penguin</h3>
+              <p>
+                This is the penguin I coded to learn CSS Animation. Click here
+                to say 'Hello'.
+              </p>
+              <a href="https://moccaa.github.io/penguin/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="js-work"></div>
+        <button id="show-more" class="js-btn">See more</button>
+      </div>
+    </div>
+    <!---------------------contact---------------------->
+    <div id="contact">
+      <div class="contanier">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>msmiimiie@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+26771215007</p>
+            <div class="social-icons">
+              <!--social link in href-->
+              <a
+                href="https://www.facebook.com/mk.berryson.5?mibextid=LQQJ4d"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://x.com/minimoccaa?s=21" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/miimxiie?igsh=czFyNTdjcDN5cWkw&utm_source=qr"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://line.me/ti/p/x-cOGStI8r" target="_blank"
+                ><i class="fa-brands fa-line"></i
+              ></a>
+              <a href="https://wa.me/818082113441" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mia-reetsang-37665a298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <!--upload your cv here-->
+            <a href="images/resumé.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message..."
+              ></textarea>
+              <span id="msg"></span>
+              <div class="btnc">
+                <button type="submit" class="btn btn2">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="heart">
+          <p>Mia <i class="fa-solid fa-heart"></i></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/portfolio.js"></script>
+  </body>
+</html>
